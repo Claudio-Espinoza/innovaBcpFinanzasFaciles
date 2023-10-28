@@ -1,0 +1,52 @@
+# Levantamiento del sistema
+
+## Levantamiento del Json-server
+
+1. cd graphql-server
+2. npm run json-server 
+
+## Levantamiento del apollo-server
+
+1. cd graphql-server
+2. npx nodemon controller/index.js
+
+## Tabla actual
+      type Perfil_usuario {
+            perfil_inversion: String
+            nivel_usuario: String!
+      }
+
+      type Usuario {
+            id_usuario: String!
+            nombre: String!
+            dni: String!
+            tarjeta: String!
+            clave: String!
+            balance: Balance
+            cuenta: [Cuenta]
+      }
+
+      type Balance {
+            movimiento: [Movimiento]
+            num_movimiento: Int
+            ingreso: Int!
+            balance_geneal: Int
+            perfil_Usuario: Perfil_usuario!
+            cuenta: [Cuenta]
+      }
+
+      type Movimiento {
+            consumo: Int!
+            fecha: String!
+      }
+
+      type Cuenta {
+            nombre: String!
+            tipo_cuenta: String!
+      }
+
+## Funciones
+
+1. personCount: Int!
+2. findUserByDni(dni: String!): Usuario
+3. findUserByTarjeta(dni: String!): Usuario
