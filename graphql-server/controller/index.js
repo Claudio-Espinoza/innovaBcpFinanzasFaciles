@@ -1,5 +1,5 @@
 import { ApolloServer } from "apollo-server";
-import {resolvers, typeDefs} from "../schema/schemas.JS"
+import {resolvers, typeDefs} from "../schema/schemas.js"
 
 
 async function startAppServer(){
@@ -7,8 +7,8 @@ async function startAppServer(){
             typeDefs, resolvers
       })
 
-      await server.listen().then(({URL}) => {
-            console.log(`Server ready at ${URL}`)
+      await server.listen().then(({url}) => {
+            console.log(`Server ready at ${url}`)
 
       })
 }
