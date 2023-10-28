@@ -58,11 +58,25 @@ export const resolvers = {
             },
 
             findUserByDni: async (root, args) => {
+                  const { data: usuarioLista } = await axios.get('http://localhost:3000/Usuario')
+                  const { dni } = args
 
+                  if ((usuarioLista.find(persons => persons.dni == args.dni))) {
+                        return usuarioLista.find(personFromRestApi => personFromRestApi.dni == dni)
+                  } else {
+                        console.log("\nNo se encuentran relaciones con ese parametro\nParametro ingresado: ", dni)
+                  }
             },
 
             findUserByTarjeta: async (root, args) => {
+                  const { data: usuarioLista } = await axios.get('http://localhost:3000/Usuario')
+                  const { tarjeta } = args
 
+                  if ((usuarioLista.find(persons => persons.dni == args.dni))) {
+                        return personFromRestApi.find(personFromRestApi => personFromRestApi.tarjeta == tarjeta)
+                  } else {
+                        console.log("\nNo se encuentran relaciones con ese parametro\nParametro ingresado: ", dni)
+                  }
             }
       }
 }
