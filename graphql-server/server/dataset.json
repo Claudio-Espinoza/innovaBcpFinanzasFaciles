@@ -1,0 +1,122 @@
+{
+      "Usuario": [
+            {
+                  "id_usuario": "1",
+                  "nombre": "Josue Contreras",
+                  "dni": "11111111",
+                  "tarjeta": "1111-1111-1111-1111",
+                  "clave": "W?IU*pkpetRHW|3KxT`P2#@R|:cf!p`4",
+                  "balance": {
+                        "movimiento": [
+                              {
+                                    "consumo": 1000,
+                                    "fecha": "2023-10-01"
+                              },
+                              {
+                                    "consumo": 900,
+                                    "fecha": "2023-10-15"
+                              }
+                        ],
+                        "num_movimiento": 2,
+                        "ingreso": 2000,
+                        "balance_geneal": 100,
+                        "perfil_Usuario": {
+                              "perfil_inversion": null,
+                              "nivel_usuario": "Nuevo"
+                        },
+                        "cuenta": [
+                              {
+                                    "nombre": "Cuenta",
+                                    "tipo_cuenta": "Corriente"
+                              }
+                        ]
+                  },
+                  "cuenta": []
+            },
+            {
+                  "id_usuario": "2",
+                  "nombre": "Marco Caceres ",
+                  "dni": "22222222",
+                  "tarjeta": "2222-2222-2222-2222",
+                  "clave": "oxfEj2CLumrIwXIU",
+                  "balance": {
+                        "movimiento": [
+                              {
+                                    "consumo": 1200,
+                                    "fecha": "2023-09-05"
+                              }
+                        ],
+                        "num_movimiento": 1,
+                        "ingreso": 2000,
+                        "balance_geneal": 800,
+                        "perfil_Usuario": {
+                              "perfil_inversion": "Conservador",
+                              "nivel_usuario": "Principiante"
+                        },
+                        "cuenta": [
+                              {
+                                    "nombre": "Cuenta1",
+                                    "tipo_cuenta": "Ahorros"
+                              },
+                              {
+                                    "nombre": "Cuenta2",
+                                    "tipo_cuenta": "Corriente"
+                              }
+                        ]
+                  },
+                  "cuenta": [
+                        {
+                              "nombre": "Cuenta1",
+                              "tipo_cuenta": "Ahorros"
+                        },
+                        {
+                              "nombre": "Cuenta2",
+                              "tipo_cuenta": "Corriente"
+                        }
+                  ]
+            }
+            ,
+            {
+                  "id_usuario": "3",
+                  "nombre": "Armin Caceres ",
+                  "dni": "33333333",
+                  "tarjeta": "3333-3333-3333-3333",
+                  "clave": "ra0fDwAskU8Omrn7IWr3PtYtKLJCeMTH",
+                  "balance": {
+                        "movimiento": [
+                              {
+                                    "consumo": 200,
+                                    "fecha": "2023-09-05"
+                              }
+                        ],
+                        "num_movimiento": 1,
+                        "ingreso": 2000,
+                        "balance_geneal": 1800,
+                        "perfil_Usuario": {
+                              "perfil_inversion": "Agresivo",
+                              "nivel_usuario": "Experimentado"
+                        },
+                        "cuenta": [
+                              {
+                                    "nombre": "Cuenta1",
+                                    "tipo_cuenta": "Ahorros"
+                              },
+                              {
+                                    "nombre": "Cuenta2",
+                                    "tipo_cuenta": "Corriente"
+                              }
+                        ]
+                  },
+                  "cuenta": [
+                        {
+                              "nombre": "Cuenta1",
+                              "tipo_cuenta": "Ahorros"
+                        },
+                        {
+                              "nombre": "Cuenta2",
+                              "tipo_cuenta": "Corriente"
+                        }
+                  ]
+            }
+      ]
+}
