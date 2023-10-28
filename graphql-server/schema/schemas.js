@@ -2,7 +2,7 @@ import { gql } from "apollo-server"
 import axios from "axios"
 
 export const typeDefs = gql`
-      enum NIVEL_USUARIO{
+      enum NIVEL_USUARIO{ # No se si lo usare
             NUEVO
             PRINCIPIANTE
             EXPERIMENTADO
@@ -51,7 +51,7 @@ export const typeDefs = gql`
 `
 
 export const resolvers = {
-      Query: {
+      Query: { 
             personCount: async (root, args) => {
                   const { data: personFromRestApi } = await axios.get('http://localhost:3000/Usuario')
                   return personFromRestApi.length
